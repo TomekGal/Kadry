@@ -26,7 +26,6 @@ E:\C#Nauka\Kadry\Kadry\obj\Debug\Views\AddEditEmployeeView.g.cs
 E:\C#Nauka\Kadry\Kadry\obj\Debug\Views\MainWindow.g.cs
 E:\C#Nauka\Kadry\Kadry\obj\Debug\Views\AddEditEmployeeView.baml
 E:\C#Nauka\Kadry\Kadry\obj\Debug\Views\MainWindow.baml
-E:\C#Nauka\Kadry\Kadry\obj\Debug\Kadry.csprojAssemblyReference.cache
 E:\C#Nauka\Kadry\Kadry\bin\Debug\EntityFramework.dll
 E:\C#Nauka\Kadry\Kadry\bin\Debug\EntityFramework.SqlServer.dll
 E:\C#Nauka\Kadry\Kadry\bin\Debug\EntityFramework.xml
@@ -36,3 +35,4 @@ E:\C#Nauka\Kadry\Kadry\obj\Debug\Views\LoginWindow.baml
 E:\C#Nauka\Kadry\Kadry\obj\Debug\Views\FiredWindowView.g.cs
 E:\C#Nauka\Kadry\Kadry\obj\Debug\Views\FiredWindowView.baml
 E:\C#Nauka\Kadry\Kadry\obj\Debug\Kadry.Migrations.Initialization.resources
+E:\C#Nauka\Kadry\Kadry\obj\Debug\Kadry.Migrations.ChangesAftrKazimiezRemrks.resources

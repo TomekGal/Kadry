@@ -57,21 +57,10 @@ namespace Kadry.ViewModels
         private void Confirm(object obj)
         {
 
-           UpdateFiredEmployee(SelectedEmployeeId);
+           _repository.UpdateFiredEmployee(SelectedEmployeeId, FiredDate);
             CloseWindow(obj as Window);
         }
-        public void UpdateFiredEmployee(int id)
-        {
-
-            using (var context = new ApplicationDbContext())
-            {
-                var employeeToFired = context.Employees.Find(id);
-                employeeToFired.EndDate = FiredDate;
-                context.SaveChanges();
-            }
-           
-        }
-        
+       
     }
     
 }

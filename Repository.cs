@@ -4,7 +4,7 @@ using System.Linq;
 using System.Data.Entity;
 using Kadry.Models.Wrappers;
 using Kadry.Converters;
-
+using System;
 
 namespace Kadry
 {
@@ -84,6 +84,18 @@ namespace Kadry
                 context.SaveChanges();
             }
             
+        }
+
+        public void UpdateFiredEmployee(int id, DateTime FiredDate)
+        {
+
+            using (var context = new ApplicationDbContext())
+            {
+                var employeeToFired = context.Employees.Find(id);
+                employeeToFired.EndDate = FiredDate;
+                context.SaveChanges();
+            }
+
         }
 
         private void UpdateEmployeeProperties(ApplicationDbContext context, Employee employee)

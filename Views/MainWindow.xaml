@@ -48,7 +48,7 @@
                 />
             <Button 
                 Command="{Binding RefreshEmployeeCommand}" 
-                Content="Odświerz" 
+                Content="Odśwież" 
                 Height="30"
                 Width="100" 
                 Margin="5"/>

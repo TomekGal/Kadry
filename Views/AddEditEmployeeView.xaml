@@ -59,7 +59,7 @@
                      Margin="5"  />
 
         <Label Grid.Row="6" Grid.Column="0" Content="Zarobki" Margin="5"/>
-        <TextBox Text="{Binding Employee.Salary}" Grid.Row="6" Grid.Column="1" Margin="5"/>
+        <mah:NumericUpDown Value="{Binding Employee.Salary}" Grid.Row="6" Grid.Column="1" Margin="5"/>
 
         <Label Grid.Row="7" Grid.Column="0" Content="Status" Margin="5"/>
         <ComboBox 

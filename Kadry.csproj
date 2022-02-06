@@ -14,6 +14,8 @@
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -51,9 +53,11 @@
       <HintPath>..\packages\Microsoft.Xaml.Behaviors.Wpf.1.1.19\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web" />
@@ -100,6 +104,10 @@
     <Compile Include="Migrations\202202022128459_Initialization.cs" />
     <Compile Include="Migrations\202202022128459_Initialization.Designer.cs">
       <DependentUpon>202202022128459_Initialization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202061937024_ChangesAftrKazimiezRemrks.cs" />
+    <Compile Include="Migrations\202202061937024_ChangesAftrKazimiezRemrks.Designer.cs">
+      <DependentUpon>202202061937024_ChangesAftrKazimiezRemrks.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Configurations\EmployeeConfiguration.cs" />
@@ -149,6 +157,9 @@
     </Compile>
     <EmbeddedResource Include="Migrations\202202022128459_Initialization.resx">
       <DependentUpon>202202022128459_Initialization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202061937024_ChangesAftrKazimiezRemrks.resx">
+      <DependentUpon>202202061937024_ChangesAftrKazimiezRemrks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
