@@ -37,35 +37,16 @@ namespace Kadry.ViewModels
             }
         }
 
-        private string _passwordSet;
+       
 
-        public string PasswordSet
-        {
-            get { return _passwordSet; }
-            set
-            { 
-                _passwordSet = value;
-                OnPropertyChanged();
-            }
-        }
-
-        private string _passwordB;
-        public string PasswordB
-        {
-            get { return _passwordB; }
-            set
-            {
-                _passwordB = value;
-                OnPropertyChanged();
-            }
-        }
+      
 
         public string Password { get; set; }
         private void Correct(object obj)
         {
            
             NameSet = null;
-            PasswordSet = null;
+           
 
         }
 
