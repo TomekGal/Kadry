@@ -36,3 +36,4 @@ E:\C#Nauka\Kadry\Kadry\obj\Debug\Views\FiredWindowView.g.cs
 E:\C#Nauka\Kadry\Kadry\obj\Debug\Views\FiredWindowView.baml
 E:\C#Nauka\Kadry\Kadry\obj\Debug\Kadry.Migrations.Initialization.resources
 E:\C#Nauka\Kadry\Kadry\obj\Debug\Kadry.Migrations.ChangesAftrKazimiezRemrks.resources
+E:\C#Nauka\Kadry\Kadry\obj\Debug\Kadry.csprojAssemblyReference.cache

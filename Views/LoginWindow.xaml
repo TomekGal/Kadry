@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
-        xmlns:local="clr-namespace:Kadry.Models.Domains"
+        xmlns:local="clr-namespace:Kadry"
         mc:Ignorable="d"
                   WindowStartupLocation="CenterScreen"
                  Name="FirstWindow"
@@ -26,9 +26,9 @@
         <Label Grid.Row="1" Grid.Column="0" Content="Podaj nazwę użytkownika" FontSize="16" Margin="5"/>
         <Label Grid.Row="2" Grid.Column="0" Content="Podaj hasło" FontSize="16" Margin="5"/>
         <TextBox Text="{Binding NameSet}" Grid.Row="1" Grid.Column="1" Margin="5"/>
-        <TextBox Text="{Binding PasswordSet}" Grid.Row="2" Grid.Column="1" Margin="5"/>
+        <PasswordBox x:Name="PasswordB"  Grid.Row="2" Grid.Column="1" Margin="5"/>
         <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal" Height="Auto" HorizontalAlignment="Right">
-            <Button Command="{Binding ConfirmCommand }" CommandParameter="{Binding ElementName=FirstWindow}"  Content="OK" Width="100" Height="30" Margin="5"/>
+            <Button Command="{Binding ConfirmCommand }" CommandParameter="{Binding ElementName=PasswordB}"  Content="OK" Width="100" Height="30" Margin="5"/>
             <Button Command="{Binding CancelCommand }" CommandParameter="{Binding ElementName=FirstWindow}" Content="Anuluj" Width="100" Height="30" Margin="5"/>
             <Button Command="{Binding CorrectCommand }" CommandParameter="{Binding ElementName=FirstWindow}" Content="Popraw" Width="100" Height="30" Margin="5"/>
         </StackPanel>

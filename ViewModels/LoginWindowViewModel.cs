@@ -4,17 +4,20 @@ using MahApps.Metro.Controls;
 using MahApps.Metro.Controls.Dialogs;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
 
 namespace Kadry.ViewModels
 {
  public  class LoginWindowViewModel : ViewModelBase
     {
+       
         public LoginWindowViewModel()
         {
             ConfirmCommand = new AsyncRelayCommand(Confirm);
             CancelCommand = new RelayCommand(Cancel);
             CorrectCommand = new RelayCommand(Correct);
+           
          }
 
         public ICommand ConfirmCommand { get; set; }
@@ -46,6 +49,18 @@ namespace Kadry.ViewModels
             }
         }
 
+        private string _passwordB;
+        public string PasswordB
+        {
+            get { return _passwordB; }
+            set
+            {
+                _passwordB = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public string Password { get; set; }
         private void Correct(object obj)
         {
            
@@ -67,19 +82,21 @@ namespace Kadry.ViewModels
             window.Close();
         }
 
-        private async Task  Confirm(object obj)
+        private async Task  Confirm(object parameter)
         {
             var loginSettings = new LoginSettings();
             loginSettings.Name = "user";
             loginSettings.Password = "password";
 
-            var userSettings = new LoginSettings();
+           
+            PasswordBox boxPass = (PasswordBox)parameter;
+            Password = boxPass.Password;
 
             var windows = Application.Current.Windows;
             var loginWindow = windows[1] as MetroWindow;
             loginWindow.ShowCloseButton=false;
 
-            if (NameSet == loginSettings.Name && PasswordSet == loginSettings.Password)
+            if (NameSet == loginSettings.Name && Password == loginSettings.Password)
             {
 
                 var dialog = await loginWindow.ShowMessageAsync(

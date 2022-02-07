@@ -26,7 +26,7 @@ namespace Kadry.ViewModels
             DeleteEmployeeCommand = new AsyncRelayCommand(DeleteEmployee, CanEditDeleteEmployee);
 
             var loginWindow = new LoginWindow();
-            //loginWindow.ShowDialog();
+            loginWindow.ShowDialog();
 
             _repository.InitStatuses();
             RefreshKadry();
