@@ -42,10 +42,16 @@ namespace Kadry
         {
             using (var context = new ApplicationDbContext())
             {
-                var EmployeeId = context.Employees.Select(x=>x.EmployeeId);
+                int EmployeeCount = context.Employees.Count();
+                int EmployeeId;
 
-                return EmployeeId.Max();
-               
+                if (EmployeeCount != 0)
+                {
+                    return EmployeeId = context.Employees.Select(x => x.Id).Max();
+                }
+                return (int)( EmployeeId = 0);
+
+
             }
         }
         public void DismissEmployee(int id)
